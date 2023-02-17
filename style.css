@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+/* Font class*/
+.inter{
+    font-family: "Inter";
+}
+/* Repetitive class*/
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Icon transform */
+.fa-table-columns{
+    transform: rotate(-90deg)
+}
+/* CSS */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+}
+header{
+    z-index: 12;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #FFFFFF;
+    background-color: #1E1E1E;
+}
+main{
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    color: #FFFFFF;
+    margin-top: 13vh;
+}
+.headitems{
+    width: 100%;
+    display: flex;
+    margin-left: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    height: 45px;
+    width: 450px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 8px 16px;
+    margin-left: 5vw;
+}
+.searchbar i{
+    font-size: 22px;
+}
+.searchbar input{
+    margin: 1rem;
+    font-size: 18px;
+    border: none;
+}
+.profil{
+    width: 20vw;
+    justify-content: space-between;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.notification:hover{
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    flex-direction: column;
+    width: 20vw;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 37px;
+    padding: 1rem;
+    top: 81px;
+    z-index: 22;
+}
+.logo{
+    width: 220px;
+}
+
+nav{
+    align-items: flex-start;
+}
+.main-nav{
+    font-weight: 500;
+    padding-bottom: 8rem;
+}
+.nav-element{
+    padding: 8px 16px;
+}
+.nav-element a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-element a i{
+    font-size: 2.25rem;
+    
+}
+.active-nav{
+    background: linear-gradient(
+        266.37deg,
+        #FAFF00 -5.82%,
+        #FAFF00 15.95%,
+        #1970D6 41.2%,
+        #6C1182 72.88%
+        );
+    border-radius: 17px;
+    margin-bottom: 2rem;
+}
+.active-nav a{
+    color: #000000;
+}
+.main-content{
+    padding: 16px;
+    margin-left: 18vw;
+    align-items: center;
+}
+
+.infos-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10vw;
+    padding-left: 16px;
+}
+.funds{
+    display: flex;
+    flex-direction: column;
+}
+.funds h3{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.funds h4{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+}
+.funds h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.balance{
+    display: flex;
+    gap: 8px;
+}
+.menu{
+    display: flex;
+    border-radius: 17px;
+    background-color: #292727;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 16px;
+    height: 60%;
+    margin-bottom: 5%;
+}
+.menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 17px;
+}
+.active-menu{
+    background-color: #0D0C0C;
+}
+.right-bar{
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+.right-bar h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.graph img{
+    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+}
+.transactions{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.transaction{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.coin-icon img{
+    width: 90%;
+    height: 90%;
+}
+.transaction-infos{
+    display: flex;
+    gap: 16px;
+}
+.transaction-infos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.transaction-infos div p{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.fade{
+    opacity: 70%;
+}
+.positive{
+    color: #4AD619;
+}
+.negative{
+    color:#D61919;
+}
+.assets{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 12px;
+    margin-right: 12px;
+}
+.asset{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 100%;
+    padding: 12px;
+    padding-top: 4px;
+}
+.btc-asset{
+    background: linear-gradient(
+        98.73deg,
+        #611D8D 35.75%, 
+        #2F7EC1 73.26%
+    );
+}
+.assetlogo{
+    display: flex;
+    flex-direction: column;
+}
+.asset-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.asset p{
+    padding: 0 8px;
+}
+.asset-detail p{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 26px;
+}
+.eth-asset{
+    background: linear-gradient(
+        99.56deg, 
+        #FAFF00 35.82%,
+        #29ABE2 64.75%, 
+        rgba(255, 255, 255, 0.7) 91.33%
+    );
+    color: #000000;
+    padding-top: 8px;
+}
+.main-transactions{
+    display: flex;
+    flex-direction: column;
+
+}
+.section-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 26px;
+    
+
+}
+.section-head h3, .section-head a{
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+.section-head a{
+    opacity: 70%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main-transac{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(32, 35, 43, 0.7);
+    box-shadow: 0 0 5px 10px rgba(32, 35, 43, 0.7);
+    border-radius: 30px;
+    padding: 0 26px;
+}
+.main-transac button{
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.btc-market{
+    color: #1970D6;
+}
+.eth-market{
+    color: #6C1182;
+}
+.transaction-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+}
+
+.main-head div i{
+    display: none;
+} 
+.transaction-infos .fade{
+    min-width: 120px;
+}
+.coin-icon{
+    margin-right: 8px;
+}
+.transaction img{
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 55px;
+    max-width: 55px;
+}
+.main-head img{
+    display: none;
+}
+.mobile-seeall{
+    display: none;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 17px;
+    opacity: 70%;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 22px;
+}
+.main-head div i{
+    font-size: 26px;
+}
+
+#nav-menu:hover, #profil-menu:hover, #profil-close{
+    cursor: pointer;
+}
+.show{
+    display: flex !important; 
+}
+#profil-close{
+    display: none;
+}
+#profil-menu{
+    display: none;
+}
+.main-head .logo{
+    display: flex;
+}
+.main-head .profil{
+    gap: 13vw;
+}
+
+
+
+@media (max-width: 1400px){
+    .sidebar{
+        display: none;
+    }
+    .main-content{
+        margin-left: auto;
+    }
+    #nav{
+        width: 100vw;
+        background-color: #1E1E1E;
+        z-index: 13;
+    }
+}
+@media (max-width:1300px){
+    .headitems{
+        display: none;
+    }
+    .profil{
+        width: auto;
+    }
+    main{
+        justify-content: center;
+    }
+    .main-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .main-head div .burger, .main-head img{
+        display: flex;
+    }
+    .transaction-infos{
+        gap: 0px;
+    }
+    .transaction-infos div p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1216px){
+    .transaction-infos .fade{
+        min-width: 80px;
+    }
+    .transaction-infos div p{
+        font-size: 12px;
+        max-width: 80px;
+    }
+}
+@media (max-width: 1060px){
+    #profil-menu{
+        display: flex;
+    }
+    .main-head .profil{
+        display: none;
+    }
+    .main-head .profil-btn{
+        display: none;
+    }
+    .main-head div .mobile-menu{
+        display: flex;
+    }
+    header{
+        z-index: 12;
+    }
+    .right-bar{
+        display: none;
+        width: 100vw;
+        background-color: #1E1E1E;
+        position: absolute;
+        z-index: 13;
+        align-items: center;
+        height: 100%;
+        top: 81px;
+    }
+    .infos-container{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .falsediv{
+        display: none;
+    }
+}
+@media (max-width:720px){
+    .section-head{
+        width: 100%;
+        padding: 16px;
+    }
+    .infos-container{
+        flex-direction: column-reverse;
+    }
+    .funds{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .funds h4, .funds h5{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .funds h3{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main-transactions{
+        align-items: center;
+    }
+    .main-transac{
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        width:min-content
+    }
+}
+@media (max-width:540px){
+    .funds{
+        flex-direction: column;
+    }
+    .mobile-seeall{
+        display: flex;
+    }
+    .section-head{
+        justify-content: center;
+    }
+    .section-head a{
+        display: none;
+    }
+    header{
+        padding: 16px;
+        margin: 0;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .section-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 430px){
+    
+    .menu{
+        padding: 4px 8px;
+        gap: 5px;
+    }
+    .menu a{
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}   
+
+

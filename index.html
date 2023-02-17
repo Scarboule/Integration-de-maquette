@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--  -->
+    <title>Crypto Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="main-head">
+            <div id="nav-menu">
+                <i class="burger fa-solid fa-bars"></i>
+            </div>
+            <img class="logo" src="img/Logo.png" alt="logo">
+            <div id="profil-menu">
+                <i class="mobile-menu fa-solid fa-angle-left"></i>
+            </div>
+            <div id="profil-close">
+                <i class="mobile-menu fa-solid fa-angle-right"></i>
+            </div>
+            <div class="profil">
+                <div class="notification">
+                    <img src="img/Notification.png" alt="notification">
+                </div>
+                
+                <div class="profil-btn">
+                    <img src="img/Profile.png" alt="Profile">
+                </div>
+            </div>
+
+        </div>
+        <div class="headitems">
+
+                <div class="welcome poppins">
+                    <h2>Hi, Rogers</h2>
+                </div>
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                
+            
+            <div class="profil">
+                <div class="notification">
+                    <img src="img/Notification.png" alt="notification">
+                </div>
+                <div>
+                    <img src="img/Profile.png" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="nav" class="sidebar flex-col poppins">
+            <nav class="flex-col">
+                <div class="nav-element active-nav">
+                    <a href="#"><i class="fa-solid fa-table-columns"></i>Dashboard</a>
+                </div>
+                <div class="main-nav">
+    
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-solid fa-table-columns"></i>Invoices</a>
+                    </div>
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-solid fa-user-group"></i>Clients</a>
+                    </div>
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-solid fa-box"></i>Product</a>
+                    </div>
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-regular fa-envelope"></i>Messages</a>
+                    </div>
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                    </div>
+                    <div class="nav-element">
+                        <a href="#"><i class="fa-solid fa-circle-question"></i>Help</a>
+                    </div>
+                </div>
+                <div class="nav-element log-out inter">
+                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+                </div>
+            </nav>
+        </div>
+        <div id="main-content" class="main-content">
+            <div class="infos-container">
+                <div class="funds">
+                    <h4>Total Balance</h4>
+                    <div class="balance">
+                        <h3>0.97894652</h3>
+                        <div>
+                            <img src="img/Bitcoin tag.png" alt="bitcoin tag">
+                        </div>
+                    </div>
+                    <h5>$40,123.56</h5>
+                </div>
+                <div class="menu">
+                    <a href="#" class="active-menu">Portfolio</a>
+                    <a href="#">Funding</a>
+                    <a href="#">Assets</a>
+                    <a href="#">P2P</a>
+                </div>
+                <div class="falsediv"></div>
+            </div>
+
+            <div class="graph">
+                <img src="img/Graph.png" alt="graph">
+            </div>
+
+            <div class="main-transactions">
+
+                <div class="section-head">
+                    <h3>Recent Transactions</h3>
+                    <a href="#">See all coins</a>
+                </div>
+                <div class="section-body">
+                    <div class="transaction-section">
+
+                        <div class="main-transac">
+                            <div>
+                                <img src="img/btc.png" alt="btc">
+                            </div>
+                            <div class="flex-col">
+                                <p>Bitcoin</p>
+                                <p class="fade">BTC</p>
+                            </div>
+                            <div class="flex-col">
+                                <p>Market cap</p>
+                                <p class="btc-market">$40,243.73</p>
+                            </div>
+                            <div class="flex-col">
+                                <p>24h change</p>
+                                <p class="positive">+1,56</p>
+                            </div>
+                            <div>
+                                <img src="img/btc-vector.png" alt="btc-vector">
+                            </div>
+                            <button>Trade</button>
+                        </div>
+                        
+                        <div class="main-transac">
+                            <div>
+                                <img src="img/Etherium.png" alt="eth">
+                            </div>
+                            <div class="flex-col">
+                                <p>Etherum<p>
+                                <p class="fade">ETH</p>
+                            </div>
+                            <div class="flex-col">
+                                <p>Market cap</p>
+                                <p class="eth-market">$40,243.73</p>
+                            </div>
+                            <div class="flex-col">
+                                <p>24h change</p>
+                                <p class="negative">-1,56</p>
+                            </div>
+                            <div>
+                                <img src="img/eth-vector.png" alt="eth-vector">
+                            </div>
+                            <button>Trade</button>
+                        </div>
+                        
+                    </div>
+                    <a class="mobile-seeall" href="#">See all coins</a>
+
+                    
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="right-bar" class="right-bar">
+
+            <h3>Recent Transactions</h3>
+
+            <div class="transactions">
+
+                <div class="transaction">
+                    <div class="coin-icon">
+                        <img src="img/coins/Tether.png" alt="tether">
+                    </div>
+                    <div class="transaction-infos">
+                        <div>
+                            <p>Usdt</p>
+                            <p class="fade">Recieved</p>
+                        </div>
+                        <div>
+                            <p class="positive">+$3.545</p>
+                            <p class="fade">Today, 13:45</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="transaction">
+                    <div class="coin-icon">
+                        <img src="img/coins/Binance-Coin.png" alt="SNB">
+                    </div>
+                    <div class="transaction-infos">
+                        <div>
+                            <p>SNB</p>
+                            <p class="fade">Buy</p>
+                        </div>
+                        <div>
+                            <p class="positive">+ 0.7546</p>
+                            <p class="fade">Today, 5:45</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="transaction">
+                    <div class="coin-icon">
+                        <img src="img/coins/litecoin.png" alt="Lite coin">
+                    </div>
+                    <div class="transaction-infos">
+                        <div>
+                            <p>Lite Coin</p>
+                            <p class="fade">Withdrawal</p>
+                        </div>
+                        <div>
+                            <p class="negative">- 0.7546</p>
+                            <p class="fade">Today, 7:55</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="transaction">
+                    <div class="coin-icon">
+                        <img src="img/coins/Btc.png" alt="Bitcoin">
+                    </div>
+                    <div class="transaction-infos">
+                        <div>
+                            <p>Bitecoin</p>
+                            <p class="fade">Recieved</p>
+                        </div>
+                        <div>
+                            <p class="positive">+ 2.7546</p>
+                            <p class="fade">Today, 8:55</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="transaction">
+                    <div class="coin-icon">
+                        <img src="img/coins/Etherium.png" alt="Etherum">
+                    </div>
+                    <div class="transaction-infos">
+                        <div>
+                            <p>Etherum</p>
+                            <p class="fade">Recieved</p>
+                        </div>
+                        <div>
+                            <p class="positive">+ 1.646</p>
+                            <p class="fade">Today, 10:02</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Assets</h3>
+
+            <div class="assets">
+
+                <div class="asset btc-asset">
+                    <div class="assetlogo">
+                        <div>
+                            <img src="img/btcasset.png" alt="Bitcoin icon">
+                        </div>
+                        <p>Bitcoin</p>
+                    </div>
+                    <div class="asset-detail">
+                        <p>121,6450.45</p>
+                        <p>BTC</p>
+                    </div>
+                </div>
+
+                <div class="asset eth-asset">
+                    <div class="assetlogo">
+                        <div>
+                            <img src="img/Etherium icon.png" alt="Etherum icon">
+                        </div>
+                        <p>Etherum</p>
+                    </div>
+                    <div class="asset-detail">
+                        <p>143,850.45</p>
+                        <p>ETH</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
